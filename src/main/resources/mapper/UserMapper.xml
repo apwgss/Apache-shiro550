@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo3.mapper.AdminMapper">
+    <select id="findByName" resultType="Admin" parameterType="String">
+        select * from admin where name = #{name}
+    </select>
+</mapper>
